@@ -3,6 +3,7 @@ import { TodoCounter } from "./TodoCounter";
 import { TodoItem } from "./TodoItem";
 import { TodoList } from "./TodoList";
 import { TodoSearch } from "./TodoSearch";
+import './App.css'
 
 const defaultTodos = [
   { text: "Cortar cebolla", completed: true },
@@ -13,7 +14,7 @@ const defaultTodos = [
 
 function App() {
   return (
-    <>
+    <div className="max-w">
       <TodoCounter completed={16} total={25} />
       <TodoSearch />
 
@@ -28,7 +29,7 @@ function App() {
       </TodoList>
 
       <CreateTodoButton />
-    </>
+    </div>
   );
 }
 

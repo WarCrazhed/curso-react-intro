@@ -1,0 +1,7 @@
+div {
+    background: #000000bb;
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100vh;
+    padding-inline: 2rem;
+}
