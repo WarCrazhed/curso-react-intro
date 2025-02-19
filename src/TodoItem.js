@@ -1,10 +1,12 @@
+import './TodoItem.css'
+
 function TodoItem ({ text, completed }) {
     return (
-      <li>
+      <div className='list'>
         <span>V</span>
         <p>{text}</p>
         <span>X</span>
-      </li>
+      </div>
     );
   }
 

@@ -14,7 +14,7 @@ const defaultTodos = [
 
 function App() {
   return (
-    <div className="max-w">
+    <div className="container">
       <TodoCounter completed={16} total={25} />
       <TodoSearch />
 
