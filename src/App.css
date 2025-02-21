@@ -1,8 +1,0 @@
-.container {
-    background: #00000080;
-    backdrop-filter: blur(10px);
-    max-width: 75rem;
-    margin: 0 auto;
-    height: 100vh;
-    padding-inline: 2rem;
-}

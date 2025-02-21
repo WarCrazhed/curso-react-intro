@@ -1,11 +1,15 @@
-import './TodoItem.css'
-
 function TodoItem ({ text, completed }) {
     return (
       <div className='list'>
-        <span>V</span>
         <p>{text}</p>
-        <span>X</span>
+        <div className="flex-justify-between">
+          <button className="btn-success">
+            V
+          </button>
+          <button className="btn-danger">
+            X
+          </button>
+        </div>
       </div>
     );
   }
