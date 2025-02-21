@@ -2,7 +2,9 @@ import './TodoSearch.css'
 
 function TodoSearch() {
     return (
-        <input placeholder="Cortar cebolla" />
+        <div className='input-form'>
+            <input placeholder="Cortar cebolla" />
+        </div>
     )
 }
 
