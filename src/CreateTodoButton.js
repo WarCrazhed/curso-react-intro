@@ -1,7 +1,10 @@
 function CreateTodoButton() {
     return (
-        <button className="btn">
-            Aceptar
+        <button 
+            className="btn font-bold"
+            onClick={(e) => console.log(e.target)}
+        >
+            +
         </button>
     );
 }

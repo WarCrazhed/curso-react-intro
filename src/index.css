@@ -130,3 +130,19 @@ p, .list {
   margin-top: 0;
   padding-bottom: 1rem;
 }
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.font-bold {
+  font-weight: bold;
+}

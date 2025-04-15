@@ -17,8 +17,10 @@ function App() {
   return (
     <div className="container">
       <TodoCounter completed={16} total={25} />
+      <div className="flex-justify-between gap-1 items-center">
       <TodoSearch />
       <CreateTodoButton />
+      </div>
       <TodoList>
         {defaultTodos.map((todo) => (
           <TodoItem
