@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { TodoContext } from "../context/TodoContext";
+
 function CreateTodoButton() {
+    const { setOpenModal } = useContext(TodoContext);
     return (
         <button 
             className="btn font-bold"
-            onClick={(e) => console.log(e.target)}
+            onClick={() => setOpenModal(true)}
         >
             +
         </button>

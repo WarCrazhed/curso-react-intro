@@ -8,6 +8,8 @@ import { TodoSearch } from "../components/TodoSearch";
 import { TodosError } from "../components/TodosError";
 import { TodosLoading } from "../components/TodosLoading";
 import { TodoContext } from "../context/TodoContext";
+import { Modal } from "../components/Modal";
+import { TodoForm } from "../components/TodoForm";
 
 function AppUi() {
     const {
@@ -16,6 +18,7 @@ function AppUi() {
         searchedTodos,
         completeTodo,
         deleteTodo,
+        openModal,
     } = useContext(TodoContext);
 
     return (
@@ -39,6 +42,11 @@ function AppUi() {
                     />
                 ))}
             </TodoList>
+            {openModal && (
+                <Modal>
+                    <TodoForm />
+                </Modal>
+            )}
         </div>
     );
 }
