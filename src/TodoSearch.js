@@ -1,8 +1,7 @@
-import { useState } from "react"
-
-function TodoSearch() {
-    const [searchValue, setSearchValue] = useState('')
-    console.log('los usarios buscan todos de '+searchValue);
+function TodoSearch({
+    searchValue,
+    setSearchValue
+}) {
     
     return (
         <input 
